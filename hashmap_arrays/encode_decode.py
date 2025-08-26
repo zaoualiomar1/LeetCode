@@ -1,13 +1,13 @@
 class Solution:
 
-    def encode(self, strs: List[str]) -> str:
+    def encode(self, strs):
         res = ""
         for s in strs:
             res = str(len(s)) + "#" + s
         
         return res
 
-    def decode(self, s: str) -> List[str]:
+    def decode(self, s: str) :
         
         res, i = [], 0
         while i < len(str): 
@@ -19,3 +19,5 @@ class Solution:
             i = j+1+length
         
         return res 
+    
+solution = Solution()
